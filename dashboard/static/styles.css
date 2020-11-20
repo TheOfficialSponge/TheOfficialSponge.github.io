@@ -1,0 +1,39 @@
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+}
+.flex-row{
+  display: flex;
+  height:100%;
+}
+.sidebar{
+  background-color: rgb(247, 228, 72);
+  color: rgb(0, 0, 0);
+  padding: 1em;
+  flex: 0 0 50px;
+}
+.main-window{
+  flex: 1 1 auto;
+  background-color: rgb(8, 185, 200);
+  height: 100%;
+}
+.content{
+  color: rgb(0, 0, 0);  
+  padding: 1em;
+  height: 100%;
+  overflow-y: scroll;
+}
+@media only screen and (min-width:900px){
+  .sidebar{
+    flex: 0 0 200px;
+    padding: 1em;
+  }
+}
+
+.sidebar-link,
+.sidebar-link:hover{
+  color: rgb(99, 99, 99);
+  text-decoration: bold;
+}

@@ -1,0 +1,100 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static "styles.css" %}">
+
+  <title>Spongebob fan page</title>
+  <link rel="icon" href="sb.jpeg" type="image/gif">
+</head>
+
+<body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"
+    integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+  <div class='flex-row'>
+    <div class='sidebar'>
+      <p style="color:black;">
+        <a class="sidebar-link" href="http://127.0.0.1:8000/">
+
+          <span class='d-none d-md-inline'>
+            <strong>Home</strong>
+          </span>
+        </a>
+      </p>
+      <p>
+        <span class='d-none d-md-inline'>About the Characters:</span>
+      </p>
+      <p>
+      <p style="color:black;">
+        <a class="sidebar-link" href="http://127.0.0.1:8000/spongebob">
+
+          <span class='d-none d-md-inline'>
+            <strong>SpongeBob</strong>
+          </span>
+        </a>
+      </p>
+      <p>
+        <a class="sidebar-link" href="http://127.0.0.1:8000/squidward">
+          <span class='d-none d-md-inline'><strong>Squidward</strong></span>
+        </a>
+      </p>
+      <p>
+        <a class="sidebar-link" href="http://127.0.0.1:8000/patrick">
+          <span class='d-none d-md-inline'><strong>Patrick</strong></span>
+        </a>
+      </p>
+      <p>
+        <a class="sidebar-link" href="http://127.0.0.1:8000/sandy">
+          <span class='d-none d-md-inline'><strong>Sandy</strong></span>
+        </a>
+      </p>
+      <p>
+        <a class="sidebar-link" href="http://127.0.0.1:8000/mr.krabs">
+          <span class='d-none d-md-inline'><strong>Mr. Krabs</strong></span>
+        </a>
+      </p>
+      <p>
+        <a class="sidebar-link" href="http://127.0.0.1:8000/gary">
+          <span class='d-none d-md-inline'><strong>Gary</strong></span>
+        </a>
+      </p>
+      <p>
+        <a class="sidebar-link" href="http://127.0.0.1:8000/plankton">
+          <span class='d-none d-md-inline'><strong>Plankton</strong></span>
+        </a>
+      </p>
+      <p>
+        <a class="sidebar-link" href="http://127.0.0.1:8000/fred">
+          <span class='d-none d-md-inline'><strong>Fred</strong></span>
+        </a>
+      </p>
+    </div>
+    <div class='main-window'>
+      <div class='content'>
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

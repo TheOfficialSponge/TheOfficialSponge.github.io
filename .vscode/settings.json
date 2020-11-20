@@ -1,0 +1,10 @@
+{
+    "python.pythonPath": "/Users/martin/.virtualenvs/lesson7/bin/python",
+    "format.enable": true,
+    "[html]": {
+        "editor.formatOnSave": true
+    },
+    "emmet.includeLanguages": {
+        "javascript": "html"
+    },
+}
